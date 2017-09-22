@@ -1,0 +1,18 @@
+NAME - program.c
+
+USAGE - 
+$ make
+$ make run
+
+DESCRIPTION - 
+Parent creates a child process using fork() system call which is then turned into a daemon process.
+
+Example -
+$ make
+gcc -c program.c
+gcc -o createDaemon program.o
+
+$ make run
+./createDaemon
+Parent:: terminating
+Child: Turning this process to daemon process. Sleeping for 5 seconds
